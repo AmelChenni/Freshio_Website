@@ -1,0 +1,91 @@
+.contactUs .container{
+    margin-top: 70px;
+    display: flex;
+    gap: 10px;
+}
+.contactUs .info h2{
+    font-size: 30px;
+    font-family: MazzardHBold;
+
+}
+.contactUs .info p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.2px;
+    color: rgb(85, 85, 85);  
+    font-family: MazzardExtraLight;
+  
+}
+.contactUs .items{
+    display: flex;
+    justify-content: space-between;
+}
+.contactUs .item h3{
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: MazzardHBold;
+
+}
+.msg{
+    margin: 70px 0;
+}
+/* .table{
+    display: none;
+} */
+
+        /* Media Query for Mobile Devices */
+   
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 1024px) {
+           
+            .contactUs .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-self: center;
+                align-items: center;
+                
+            }
+            .contactUs .img{
+                width: 100%;
+                text-align: center;
+            }
+            .contactUs .info{
+                width: 100%;
+            }
+            .table{
+                width: 70%;
+            }
+            table.rotate {
+                /* Something you can count on */
+                height: 140px;
+                white-space: nowrap;
+              }
+              
+              table.rotate > th {
+                transform: 
+                  /* Magic Numbers */
+                  translate(25px, 51px)
+                  /* 45 is really 360 - 45 */
+                  rotate(315deg);
+                width: 30px;
+              }
+              table.rotate > tr > th {
+                border-bottom: 1px solid #ccc;
+                padding: 5px 10px;
+              }
+        }
+          
+      
+          
+        /* Media Query for Laptops and Desktops */
+        @media (min-width: 1025px) and (max-width: 1280px){
+       
+        }
+          
+        /* Media Query for Large screens */
+        @media (min-width: 1281px) {
+            body {
+                background-color: white;
+            }
+        }

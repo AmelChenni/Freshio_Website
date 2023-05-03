@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="vendors/css/all.min.css">
+     <!-- CSS Style-->
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/blogs.css">
+
+     <!-- Jquery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>Freshio</title>
+</head>
+<body>
+   <!-- Scroll to top -->
+   <div class="scrollTop">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+
+  <!-- Spinner -->
+ <div class="spinner">
+  <div class="preloader">
+    <svg class="cart" role="img" aria-label="Shopping cart line animation" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+        <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
+          <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
+          <circle cx="43" cy="111" r="13" />
+          <circle cx="102" cy="111" r="13" />
+        </g>
+        <g class="cart__lines" stroke="currentColor">
+          <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" stroke-dasharray="338 338" stroke-dashoffset="-338" />
+          <g class="cart__wheel1" transform="rotate(-90,43,111)">
+            <circle class="cart__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+          </g>
+          <g class="cart__wheel2" transform="rotate(90,102,111)">
+            <circle class="cart__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68" stroke-dashoffset="81.68" />
+          </g>
+        </g>
+      </g>
+    </svg>
+    <div class="preloader__text">
+      <p class="preloader__msg">CHENNI AMEL ...</p>
+      <p class="preloader__msg preloader__msg--last">This is taking long. Something’s wrong.</p>
+    </div>
+  </div>
+ </div>
+    <!-- Start Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+         <div class="logo">
+            <a class="navbar-brand" href="#"><iframe src="assets/img/logo.svg"></iframe>
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+         </div>
+          <div class="input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="rounded-pill border-0" placeholder="Search products...">
+            <a href="" class="a">Search</a>
+          </div>
+          <div class="callUs ">
+            <div class="icons">
+              <i class="fa-solid fa-headphones-simple"></i>
+            </div>
+            <div class="info">
+              <h5>CALL US 24/7 </h5>
+              <p>(1800)-88-66-991</p>
+            </div>
+          </div>
+          <div class="icons">
+            <div class="icon search ms-4">
+                <a href="">
+                    <i class="fa-solid fa-magnifying-glass"></i>                </a>
+            </div>
+            <div class="icon user ms-4">
+                <a href="">
+                    <i class="fa-regular fa-user"></i>               </a>
+            </div>
+            <div class="icon heart ms-4">
+                <a href="">
+                    <i class="fa-regular fa-heart"></i>               </a>
+            </div>
+           
+            <div class="cost ms-4">
+                <a href=""> $0.00</a>
+            </div>
+          </div>
+        </div>
+    </nav> -->
+    
+
+<!-- test -->
+
+<nav class="navbar navbar-expand-xl bg-body-tertiary pb-0">
+  <div class="container-fluid">
+   <div class="logo">
+      <a class="navbar-brand" href="#"><iframe src="assets/img/logo.svg"></iframe>
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+   </div>
+   <div class="input">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" class="rounded-pill border-0" placeholder="Search products...">
+    <a href="" class="a">Search</a>
+  </div>
+   
+    <!-- ICONS -->
+    <div class="icons">
+      <div class="icon search ms-4">
+          <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>                </a>
+      </div>
+      <div class="icon user ms-4">
+          <a href="">
+              <i class="fa-regular fa-user"></i>               </a>
+      </div>
+      <div class="icon heart ms-4">
+          <a href="">
+              <i class="fa-regular fa-heart"></i>               </a>
+      </div>
+      <div class="icon store ms-4">
+          <a href="">
+              <i class="fa-solid fa-store"></i>                </a>
+      </div>
+      <div class="cost ms-4">
+          <a href=""> $0.00</a>
+      </div>
+    </div>
+
+     <!-- NAV -->
+     <div class="collapse navbar-collapse w-100 " id="navbarSupportedContent">
+      <ul class="navbar-nav  mb-2 mb-lg-0  ">
+        <button class=" btn px-4 py-1 rounded-pill text-white"><i class="fa-solid fa-bars"></i>Shop all department</button>
+
+        <li class="nav-item ms-4 my-2 ">
+          <a class="nav-link text-white " aria-current="page" href="index.html">Home
+              <i class='fas fa-angle-down'></i>
+          </a>
+
+        </li>
+        <li class="nav-item ms-4 my-2 ">
+          <a class="nav-link text-white" href="shop.html">Shop
+          <i class='fas fa-angle-down'></i>
+          </a>
+        </li>
+
+       
+
+        <li class="nav-item ms-4 my-2">
+          <a class="nav-link text-white " href="">Page
+          <i class='fas fa-angle-down'></i>
+          </a>
+        </li>
+        <li class="nav-item ms-4 my-2">
+          <a class="nav-link active" href="blogs.html">Blog
+          <i class='fas fa-angle-down'></i>
+          </a>
+        </li>
+        <li class="nav-item text-white ms-4 my-2">
+          <a class="nav-link text-white " href="contact.html">Conact  <i class=' none fas fa-angle-down'></i>
+          </a>
+          
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End test -->
+
+<!-- OUR BLOG -->
+<div class="our-blog">
+    <div class="container-fluid">
+        <h1>our blog</h1>
+        <div>
+          <span><a href="index.html">Home</a></span>
+          <span><i class="fa-solid fa-chevron-right"></i></span>
+          <span><a href="blogs.html">Blog</a></span>
+        </div>
+    </div>
+</div>
+
+<div class="page" id="page">
+   <div class="container-fluid">
+    <div class="first-side" id="first-side">
+        <div class="page-content">
+            <div class="img">
+                <img src="assets/img/blog-new05.jpg" alt="">
+            </div>
+            <div class="info">
+                <button class="btn">package food</button>
+                <div class="date">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>October 25.2022 /</span>
+                    <i class="fa-regular fa-user"></i>
+                    <span>by admin /</span>
+                    <i class="fa-regular fa-comments"></i>                <span>0</span>
+                    <h2>Easy, soft and crispy chocolate croissants</h2>
+                    <p>Ac haca ullamcorper donec ante habi tasse donec imperdiet eturpis varius per a augue magna hac. Nec hac et vestibulum duis a tincidunt per a aptent interdum purus feugiat a id aliquet erat himenaeos nunc torquent euismod adipiscing adipiscing dui gravida justo.</p>
+                </div>
+            </div>
+        </div>
+    
+        
+    
+    </div>
+    <div class="second-side">
+      <div class="input">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" class="rounded-pill border-0" placeholder="Search...">
+        <a href="" class="a">Search</a>
+      </div>
+        <div class="sides">
+            <div class="side-categ">
+                <div class="title">
+                    <h2>blog categories</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="">dairy farm</a></li>
+                        <li><a href="">decoration</a></li>
+                        <li><a href="">grocery</a></li>
+                        <li><a href="">lifestyle</a></li>
+                        <li><a href="">packege foods</a></li>
+                        <li><a href="">tips & tricks</a></li>
+                        <li><a href="">uncategorized</a></li>
+                        <li><a href="">healthy food</a></li>
+                    </ul>
+                </div>            
+            </div>
+            <div class="side-categ">
+                <div class="title">
+                    <h2>blog categories</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="">dairy farm</a></li>
+                        <li><a href="">decoration</a></li>
+                        <li><a href="">grocery</a></li>
+                        <li><a href="">lifestyle</a></li>
+                        <li><a href="">packege foods</a></li>
+                        <li><a href="">tips & tricks</a></li>
+                        <li><a href="">uncategorized</a></li>
+                        <li><a href="">healthy food</a></li>
+                    </ul>
+                </div>            
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<footer>
+    <div class="container-fluid">
+     <!-- section one -->
+     <div class="section-one">
+       <div class=" items-content">
+         <div class="item ">
+           <div class="icons">
+             <i class="fa-solid fa-headphones-simple"></i>
+           </div>
+           <div class="info">
+             <h5>CALL US 24/7 </h5>
+             <p>(1800)-88-66-991</p>
+           </div>
+         </div>
+         <div class="item">
+           <div class="info">
+             <h5>FOLLOW US</h5>
+           </div>
+           <div class="icons">
+             <i class="fa-brands fa-facebook"></i>
+             <i class="fa-brands fa-youtube"></i>
+             <i class="fa-brands fa-twitter"></i>
+             <i class="fa-brands fa-instagram"></i>
+           </div>
+         </div>
+       </div>
+       <div class="items-imgs">
+         <img src="assets/img/payment_1.png" alt="">
+       </div>
+     </div>
+     <!-- section two -->
+     <div class="section-two">
+       <div class="item">
+         <h3>store location</h3>
+         <p>9066 Green Lake Drive Chevy Chase, MD 20815</p>
+         <span>contact@example.com</span>
+       </div>
+   
+       <div class="item">
+         <h3>information</h3>
+         <a href="">about us</a>
+         <a href="">blog</a>
+         <a href="">check out</a>
+         <a href="">contact</a>
+         <a href="">service</a>
+       </div>
+   
+       <div class="item">
+         <h3>my account</h3>
+         <a href="">my account</a>
+         <a href="">contact</a>
+         <a href="">shopping cart</a>
+         <a href="">shop</a>
+       </div>
+   
+       <div class="item">
+         <h3>categories</h3>
+         <a href="">fruits & vegetables</a>
+         <a href="">dairy product</a>
+         <a href="">package foods</a>
+         <a href="">beverage</a>
+         <a href="">health & wellness</a>
+       </div>
+   
+       <div class="item">
+         <h3>subscribe us</h3>
+         <p>Sign up and get a voucher of worth $250.00</p>
+         <input type="email" name="" class="rounded-pill p-2 border-0" placeholder="Email address..." id="">
+       </div>
+     </div>
+   
+     <!-- section three -->
+     <div class="section-three">
+       <p>Copyright © 2020 <span>Freshio</span>. All Rights Reserved.
+       </p>
+     </div>
+    </div>
+    
+     
+   </footer>
+   
+   
+   
+   
+   
+   
+   
+       <!-- Script-->
+       <script src="assets/js/scriptBlogs.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+     </body>
+   
+   </html>
